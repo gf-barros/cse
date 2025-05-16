@@ -110,5 +110,3 @@ While this is a personal learning repo, you're welcome to open issues, ask quest
 ## 📬 Contact
 
 Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/gabrielfbarros/) or open an issue if you'd like to collaborate or chat about numerical methods and CSE.
-
-Happy computing! 🚀
