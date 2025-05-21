@@ -1,0 +1,10 @@
+*.pyc
+*.csv
+*.xdmf
+*.h5
+*.vtk
+*.vtu
+*.pvtu
+*.pvd
+*.bp
+*.hdf5

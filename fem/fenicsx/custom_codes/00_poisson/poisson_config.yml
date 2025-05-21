@@ -1,0 +1,16 @@
+output_file:
+  root_dir: /mnt/c/ubuntu_interface/
+  dir: cse_custom_codes/poisson_vtx/
+  file_name: poisson
+
+mesh:
+  point_1:
+    - 0.0
+    - 0.0
+  point_2:
+    - 1.0
+    - 1.0
+  nx: 10
+  ny: 10
+  element_type: "quadrilateral"
+  element_order: 3
