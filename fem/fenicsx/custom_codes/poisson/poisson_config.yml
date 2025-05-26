@@ -1,0 +1,31 @@
+output_file:
+  root_dir: /mnt/c/ubuntu_interface/
+  dir: cse_custom_codes/poisson_vtx/
+  file_name: poisson
+
+mesh:
+  point_1:
+    - 0.0
+    - 0.0
+  point_2:
+    - 1.0
+    - 1.0
+  nx: 10
+  ny: 10
+  element_type: "quadrilateral"
+  element_order: 1
+
+# Check https://petsc.org/main/manual/ksp/#tab-kspdefaults
+# and https://petsc.org/main/manual/ksp/#tab-pcdefaults
+solver:
+  ksp_type: "preonly"
+  pc_type: "lu"
+  ksp_rtol: 1e-6
+  ksp_atol: 1e-10
+  ksp_max_it: 1000
+
+
+
+manufactured:
+  h_refinement_iterations: 5
+  p_refinement_iterations: 4
