@@ -13,4 +13,19 @@ mesh:
   nx: 10
   ny: 10
   element_type: "quadrilateral"
-  element_order: 3
+  element_order: 1
+
+# Check https://petsc.org/main/manual/ksp/#tab-kspdefaults
+# and https://petsc.org/main/manual/ksp/#tab-pcdefaults
+solver:
+  ksp_type: "preonly"
+  pc_type: "lu"
+  ksp_rtol: 1e-6
+  ksp_atol: 1e-10
+  ksp_max_it: 1000
+
+
+
+manufactured:
+  h_refinement_iterations: 5
+  p_refinement_iterations: 4
